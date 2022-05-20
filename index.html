@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script defer src="./js/database.js"></script>
-        <script defer src="./js/index.js"></script>
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Capstone E-commerce</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <h1>Weartake</h1>
-                <ul class="navCategorias">
-                    <li class="navItens">
-                        <a class="navAcesso" href=""><strong>Todos</strong></a> 
-                    </li>
-                    <li class="navItens">
-                        <a class="navAcesso" href="">Acessórios</a>
-                    </li>
-                    <li class="navItens">
-                        <a class="navAcesso" href="">Calçados</a>
-                    </li>
-                    <li class="navItens">
-                        <a class="navAcesso" href="">Camisetas</a>
-                    </li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Capstone E-commerce</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Weartake</h1>
+            <ul class="navCategorias">
+                <li class="navItens">
+                    <a class="navAcesso" href=""><strong>Todos</strong></a> 
+                </li>
+                <li class="navItens">
+                    <a class="navAcesso" href="">Acessórios</a>
+                </li>
+                <li class="navItens">
+                    <a class="navAcesso" href="">Calçados</a>
+                </li>
+                <li class="navItens">
+                    <a class="navAcesso" href="">Camisetas</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -37,91 +37,49 @@
                     <input class="input" type="text" placeholder="Digite aqui sua pesquisa">
                     <button class="botao">Pesquisar</button>
                 </div>
+
+
                 <div class="carrinho">
                     <h3 class="carrinhoTitulo">Carrinho de compras</h3>
                 </div>
+
+
                 <div class="containerCarrinho">
-                    <p class="itemCarrinho">Carrinho vázio</p>
-                    <p class="adicionarItem">Adicione itens</p>
+                    <div class="carrinhoVazio">
+                        <p class="itemCarrinho">Carrinho vázio</p>
+                        <p class="adicionarItem">Adicione itens</p>
+                    </div>
+
+                    <ul class="containerItem">
+                        <!-- <li class="produtoCarrinho">
+                            <figure class="imagemCarrinho">
+                                <img src="./img/jaqueta.svg" alt="">
+                            </figure>
+                            <div class="infoCarrinho">
+                                <p class="nomeCarrinho">Lightweight Jacket</p>
+                                <p class="precoCarrinho">R$ 100</p>
+                                <button class="removerProduto">Remover produto</button>
+                            </div>
+                        </li> -->
+                    </ul>
+
+
+                </div>
+                <div class="boxSoma">
+                    <div class="divQuantidade">
+                        <p class="quantidade">Quantidade:</p>
+                        <p class="numeroQuantidade">0</p>
+                    </div>
+                    <div class="divTotal">
+                        <p class="totalSoma">Total:</p>
+                        <p class="valorTotal">R$: 0,00</p>
+                    </div>
                 </div>
             </section>
         </aside>
-        <ul>
-            <li class="cardProduto">
-                <figure class="cardImg">
-                    <img src="./img/jaqueta.svg" alt="Item a venda">
-                </figure>
-                <div class="card">
-                    <p class="cardCategory">Camisetas</p>
-                    <h3 class="cardNomePrdouto">Lightweight Jacket</h3>
-                    <p class="cardDescricao">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
-                    <p class="cardPreco">R$ 100.00</p>
-                    <p class="cardCarrinho"><a href="">Adicionar ao carrinho</a></p>
-                </div>
-            </li>
-            <li class="cardProduto">
-                <figure class="cardImg">
-                    <img src="./img/gorro.svg" alt="Item a venda">
-                </figure>
-                <div class="card">
-                    <p class="cardCategory">Acessórios</p>
-                    <h3 class="cardNomePrdouto">Black Hat</h3>
-                    <p class="cardDescricao">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...</p>
-                    <p class="cardPreco">R$ 100.00</p>
-                    <p class="cardCarrinho"><a href="">Adicionar ao carrinho</a></p>
-                </div>
-            </li>
-            <li class="cardProduto">
-                <figure class="cardImg">
-                    <img src="./img/mascara.svg" alt="Item a venda">
-                </figure>
-                <div class="card">
-                    <p class="cardCategory">Acessórios</p>
-                    <h3 class="cardNomePrdouto">Mask</h3>
-                    <p class="cardDescricao">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...</p>
-                    <p class="cardPreco">R$ 100.00</p>
-                    <p class="cardCarrinho"><a href="">Adicionar ao carrinho</a></p>
-                </div>
-            </li>
-            <li class="cardProduto">
-                <figure class="cardImg">
-                    <img src="./img/camiseta_preta.svg" alt="Item a venda">
-                </figure>
-                <div class="card">
-                    <p class="cardCategory">Camisetas</p>
-                    <h3 class="cardNomePrdouto">T-shirt</h3>
-                    <p class="cardDescricao">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</p>
-                    <p class="cardPreco">R$ 100.00</p>
-                    <p class="cardCarrinho"><a href="">Adicionar ao carrinho</a></p>
-                </div>
-            </li>
-            <li class="cardProduto">
-                <figure class="cardImg">
-                    <img src="./img/camiseta_branca.svg" alt="Item a venda">
-                </figure>
-                <div class="card">
-                    <p class="cardCategory">Camisetas</p>
-                    <h3 class="cardNomePrdouto">Short-Sleeve T-Shirt</h3>
-                    <p class="cardDescricao">Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais fino...</p>
-                    <p class="cardPreco">R$ 100.00</p>
-                    <p class="cardCarrinho"><a href="">Adicionar ao carrinho</a></p>
-                </div>
-            </li>
-            <li class="cardProduto">
-                <figure class="cardImg">
-                    <img src="./img/moletom.svg" alt="Item a venda">
-                </figure>
-                <div class="card">
-                    <p class="cardCategory">Camisetas</p>
-                    <h3 class="cardNomePrdouto">Champion Packable Jacket</h3>
-                    <p class="cardDescricao">Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
-                    <p class="cardPreco">R$ 100.00</p>
-                    <p class="cardCarrinho"><a href="">Adicionar ao carrinho</a></p>
-                </div>
-            </li>
+        <ul class="listaProdutos">
+      
         </ul>
     </main>
-    
-    
 </body>
 </html>
